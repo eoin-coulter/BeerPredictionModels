@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="colour <= 9.42\nentropy = 1.582\nsamples = 124\nvalue = [42, 44, 38]\nclass = lager"] ;
+1 [label="bitterness <= 9.667\nentropy = 0.316\nsamples = 35\nvalue = [0, 2, 33]\nclass = stout"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 33\nvalue = [0, 0, 33]\nclass = stout"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = lager"] ;
+1 -> 3 ;
+4 [label="alcohol <= 3.934\nentropy = 1.256\nsamples = 89\nvalue = [42, 42, 5]\nclass = ale"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.0\nsamples = 38\nvalue = [0, 38, 0]\nclass = lager"] ;
+4 -> 5 ;
+6 [label="bitterness <= 8.226\nentropy = 0.847\nsamples = 51\nvalue = [42, 4, 5]\nclass = ale"] ;
+4 -> 6 ;
+7 [label="sugars <= 17.46\nentropy = 0.863\nsamples = 7\nvalue = [0, 2, 5]\nclass = stout"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = lager"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 5]\nclass = stout"] ;
+7 -> 9 ;
+10 [label="colour <= 15.54\nentropy = 0.267\nsamples = 44\nvalue = [42, 2, 0]\nclass = ale"] ;
+6 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 42\nvalue = [42, 0, 0]\nclass = ale"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = lager"] ;
+10 -> 12 ;
+}
